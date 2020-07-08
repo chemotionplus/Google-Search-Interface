@@ -19,6 +19,7 @@ html, body, div, span, h1, p, button, .container
     background-size: cover;
     background-image: url("3955269.jpg");
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .search-menu-container
@@ -103,6 +104,7 @@ a:hover
 {
     color: #3CA64C;
 }
+
 .search_bar
 {
     width: 500px;
@@ -130,6 +132,7 @@ a:hover
     margin: 0 0 0 15px;
     border: none;
     color: #5F6368;
+    outline: none;
 }
 
 .right-side-search-button
@@ -203,4 +206,43 @@ input.cmplus-submit:hover
 .cmplus-green
 {
     color: #9fc131;
+}
+
+/* ************************************************************* */
+
+@media (max-width: 576px)
+{
+    .search-menu-container
+    {
+        float: left;
+        left: -20px;
+    }
+    
+    .google-text-logo h1
+    {
+        display: inline-block;
+        font-size: 1.5em;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .google-text-logo h1 span
+    {
+        font-size: 2.8em;
+    }
+    
+    .search_bar
+    {
+        width: 90%;
+    }
+
+    .search_bar input.cmplus-input
+    {
+        width: 85%;
+    }
+    
+    .submit-button
+    {
+        display: none;
+    }
 }

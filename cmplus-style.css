@@ -210,7 +210,7 @@ input.cmplus-submit:hover
 
 /* ************************************************************* */
 
-@media (max-width: 576px)
+@media (max-width: 800px)
 {
     .search-menu-container
     {

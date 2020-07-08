@@ -1,0 +1,206 @@
+html, body, div, span, h1, p, button, .container
+{
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+.container
+{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("3955269.jpg");
+    box-sizing: border-box;
+}
+
+.search-menu-container
+{
+    position: relative;
+    width: 400px;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    float: right;
+    background-color: transparent;
+}
+
+.search-menu-container nav ul
+{
+    display: flex;
+    width: auto;
+    list-style: none;
+    background-color: transparent;
+}
+
+a
+{
+    margin: 5px;
+    text-decoration: none;
+    color: #5F6368;
+}
+
+a:hover
+{
+    color: #418EF2;
+    text-decoration: underline;
+    text-decoration-color: #418EF2;
+}
+
+.search-content-container
+{
+    position: relative;
+    width: auto;
+    margin: 13em auto;
+    text-align: center;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.google-text-logo
+{
+    position: relative;
+    max-width: 600px;
+    margin: 1.1em auto;
+}
+
+.google-text-logo h1
+{
+    display: inline-block;
+    font-size: 2em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.google-text-logo h1 span
+{
+    font-size: 3.5em;
+}
+
+.blue
+{
+    color: #418EF2;
+}
+
+.red
+{
+    color: #F23D3D;
+}
+
+.orange
+{
+    color: #F2AC29;
+}
+
+.green
+{
+    color: #3CA64C;
+}
+.search_bar
+{
+    width: 500px;
+    height: 40px;
+    padding: 4px;
+    margin: auto;
+    border: 0px solid gray;
+    background-color: white;
+    border-radius: 24px;
+    box-sizing: border-box;
+    overflow: ;
+}
+
+.search_bar:hover
+{
+    box-shadow:0 0 3px 0 rgba(60,64,67,.30),0 2px 6px 2px rgba(60,64,67,.15);
+}
+
+.search_bar input.cmplus-input
+{
+    position: relative;
+    top: -7px;
+    width: 430px;
+    height: 28px;
+    margin: 0 0 0 15px;
+    border: none;
+    color: #5F6368;
+}
+
+.right-side-search-button
+{
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.right-side-search-button div svg
+{
+    width: 28px;
+    fill: #5F6368;
+}
+
+.submit-button
+{
+    position: relative;
+    width: 135px;
+    margin: 5px auto;
+}
+
+input.cmplus-submit
+{
+    width: auto;
+    height: 40px;
+    min-width: 54px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    text-align: center;
+    cursor: pointer;
+    user-lselect: none;
+}
+
+input.cmplus-submit:hover
+{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+.cmplus-footer
+{
+    position: absolute;
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    bottom: 0;
+    margin: auto;
+    padding: 20px;
+    background-color: #343a40;
+    box-sizing: border-box;
+}
+
+.cmplus p
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+.cmplus-green
+{
+    color: #9fc131;
+}

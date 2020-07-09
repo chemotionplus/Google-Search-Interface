@@ -59,7 +59,7 @@ a:hover
 {
     position: relative;
     width: auto;
-    margin: 13em auto;
+    margin: 26.5vh auto;
     text-align: center;
     background-color: transparent;
     overflow: hidden;
@@ -133,6 +133,7 @@ a:hover
     border: none;
     color: #5F6368;
     outline: none;
+    background-color: green;
 }
 
 .right-side-search-button
@@ -172,7 +173,7 @@ input.cmplus-submit
     padding: 0 16px;
     text-align: center;
     cursor: pointer;
-    user-lselect: none;
+    user-select: none;
 }
 
 input.cmplus-submit:hover
@@ -218,17 +219,9 @@ input.cmplus-submit:hover
         left: -35px;
     }
     
-    .search-content-container
-    {
-        margin: 5em auto;
-    }
-    
     .google-text-logo h1
     {
-        display: inline-block;
         font-size: 1.5em;
-        text-align: center;
-        box-sizing: border-box;
     }
 
     .google-text-logo h1 span
@@ -252,7 +245,10 @@ input.cmplus-submit:hover
     }
 }
 
-@media (min-width: 576px)
+@media (max-width: 576px)
 {
-    
+    .search_bar input.cmplus-input
+    {
+        width: 78%;
+    }
 }

@@ -218,6 +218,11 @@ input.cmplus-submit:hover
         left: -35px;
     }
     
+    .search-content-container
+    {
+        margin: 5em auto;
+    }
+    
     .google-text-logo h1
     {
         display: inline-block;
@@ -245,4 +250,9 @@ input.cmplus-submit:hover
     {
         display: none;
     }
+}
+
+@media (min-width: 576px)
+{
+    
 }

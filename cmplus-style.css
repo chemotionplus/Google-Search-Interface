@@ -133,7 +133,7 @@ a:hover
     border: none;
     color: #5F6368;
     outline: none;
-    background-color: green;
+    background-color: transparent;
 }
 
 .right-side-search-button

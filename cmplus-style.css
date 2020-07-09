@@ -46,6 +46,7 @@ a
     margin: 5px;
     text-decoration: none;
     color: #5F6368;
+    font-size: 1.05em;
 }
 
 a:hover
@@ -250,5 +251,15 @@ input.cmplus-submit:hover
     .search_bar input.cmplus-input
     {
         width: 78%;
+    }
+    
+    .google-text-logo h1
+    {
+        font-size: 1em;
+    }
+
+    .google-text-logo h1 span
+    {
+        font-size: 2em;
     }
 }

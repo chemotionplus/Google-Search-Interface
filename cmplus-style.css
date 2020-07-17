@@ -17,7 +17,7 @@ html, body, div, span, h1, p, button, .container
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("3955269.jpg");
+    background-image: url("markus-winkler-afW1hht0NSs-unsplash.jpg");
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -25,20 +25,24 @@ html, body, div, span, h1, p, button, .container
 .search-menu-container
 {
     position: relative;
-    width: 400px;
-    box-sizing: border-box;
+    width: auto;
+    height: 50px;
     top: 0;
-    right: 0;
+    right: 15px;
     float: right;
     background-color: transparent;
+    box-sizing: border-box;
 }
 
 .search-menu-container nav ul
 {
+    position: relative;
     display: flex;
+    top: -6px;
     width: auto;
     list-style: none;
     background-color: transparent;
+    box-sizing: border-box;
 }
 
 a
@@ -47,6 +51,7 @@ a
     text-decoration: none;
     color: #5F6368;
     font-size: 1.05em;
+    box-sizing: border-box;
 }
 
 a:hover
@@ -61,6 +66,7 @@ a:hover
     position: relative;
     width: auto;
     margin: 26.5vh auto;
+    padding: 10px;
     text-align: center;
     background-color: transparent;
     overflow: hidden;
@@ -116,7 +122,6 @@ a:hover
     background-color: white;
     border-radius: 24px;
     box-sizing: border-box;
-    overflow: ;
 }
 
 .search_bar:hover
@@ -124,7 +129,7 @@ a:hover
     box-shadow:0 0 3px 0 rgba(60,64,67,.30),0 2px 6px 2px rgba(60,64,67,.15);
 }
 
-.search_bar input.cmplus-input
+.search_bar input.search-input
 {
     position: relative;
     top: -7px;
@@ -159,7 +164,7 @@ a:hover
     margin: 5px auto;
 }
 
-input.cmplus-submit
+input.search-submit
 {
     width: auto;
     height: 40px;
@@ -177,7 +182,7 @@ input.cmplus-submit
     user-select: none;
 }
 
-input.cmplus-submit:hover
+input.search-submit:hover
 {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
@@ -186,7 +191,7 @@ input.cmplus-submit:hover
     color: #222;
 }
 
-.cmplus-footer
+.google_footer
 {
     position: absolute;
     width: 100vw;
@@ -199,7 +204,7 @@ input.cmplus-submit:hover
     box-sizing: border-box;
 }
 
-.cmplus p
+.google_footer p
 {
     font-weight: bold;
     text-align: center;
@@ -219,7 +224,7 @@ input.cmplus-submit:hover
         float: left;
         left: -35px;
     }
-    
+
     .google-text-logo h1
     {
         font-size: 1.5em;
@@ -229,17 +234,17 @@ input.cmplus-submit:hover
     {
         font-size: 2.8em;
     }
-    
+
     .search_bar
     {
-        width: 90%;
+        width: 70%;
     }
 
-    .search_bar input.cmplus-input
+    .search_bar input.search-input
     {
         width: 85%;
     }
-    
+
     .submit-button
     {
         display: none;
@@ -248,18 +253,23 @@ input.cmplus-submit:hover
 
 @media (max-width: 576px)
 {
-    .search_bar input.cmplus-input
+    .search_bar input.search-input
     {
         width: 78%;
     }
-    
+
     .google-text-logo h1
     {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .google-text-logo h1 span
     {
         font-size: 2em;
+    }
+
+    .search_bar
+    {
+        width: 95%;
     }
 }

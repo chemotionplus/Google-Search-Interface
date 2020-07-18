@@ -303,6 +303,16 @@ input.search-submit:hover
     background-color: transparent;
 }
 
+.lbl-content
+{
+    font-size: 14px;
+}
+
+.fpw-content
+{
+    font-size: 17.5px;
+}
+
 .in-content
 {
     width: 45%;
@@ -385,6 +395,7 @@ input.advanced-search-submit:hover
         justify-content: center;
         overflow: hidden;
         background-color: transparent;
+        margin-bottom: 45px;
     }
     
     .advanced-search-container .lbl-in-container, .fpw-container

@@ -38,7 +38,7 @@ html, body, div, span, h1, p, button, .container
 {
     position: relative;
     display: flex;
-    top: -6px;
+    top: 0;
     width: auto;
     list-style: none;
     background-color: transparent;
@@ -157,11 +157,20 @@ a:hover
     fill: #5F6368;
 }
 
+.search-button
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: resd;
+    margin: 30px auto;
+}
 .submit-button
 {
     position: relative;
-    width: 135px;
-    margin: 5px auto;
+    width: auto;
+    height: 40px;
+    margin: auto 5px;
 }
 
 input.search-submit
@@ -175,11 +184,11 @@ input.search-submit
     color: #5F6368;
     font-family: arial,sans-serif;
     font-size: 14px;
-    margin: 11px 4px;
     padding: 0 16px;
     text-align: center;
     cursor: pointer;
     user-select: none;
+    box-sizing: border-box;
 }
 
 input.search-submit:hover
@@ -206,7 +215,7 @@ input.search-submit:hover
 
 .google_footer p
 {
-    font-weight: bold;
+    font-weight: 525;
     text-align: center;
 }
 
@@ -217,14 +226,130 @@ input.search-submit:hover
 
 /* ************************************************************* */
 
+.google-text-logo.mini, .advanced-search-top-bar label
+{
+    position: absolute;
+    top: 10px;
+    float: left;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.google-text-logo.mini h1 span
+{
+    font-size: 1em;
+    letter-spacing: -10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-top-bar, .advanced-search-top-bar
+{
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+}
+
+.advanced-search-top-bar
+{
+    top: 10px;
+    background-color: transparent;
+    border-bottom: 4px solid #7CC4E4;
+}
+
+.advanced-search-top-bar label
+{
+    top: 18px;
+    left: 50px;
+    font-weight: 500;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+.advanced-search-form
+{
+    position: relative;
+    top: 6px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgba(124, 196, 228,0.8);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.advanced-search-container .lbl-in-container, .fpw-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.lbl-content, .fpw-content
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 20%;
+    min-width: 200px;
+    height: 30px;
+    text-align: left;
+    background-color: transparent;
+}
+
+.in-content
+{
+    width: 45%;
+    min-width: 200px;
+}
+
+.blank-space
+{
+    width: 35%
+}
+
+.lbl-content label,.fpw-content span
+{
+    color: #5F6368;
+    vertical-align: baseline;
+    vertical-align: -moz-middle-with-baseline;
+}
+
+.in-content .in
+{
+    width: 100%;
+    height: 25px;
+    border: 1px solid #d9d9d9;
+    border-radius: 1px;
+}
+
+input.advanced-search-submit
+{
+    position: relative;
+    float: right;
+    border: none;
+    color: white;
+    background-color: #418EF2;
+}
+
+input.advanced-search-submit:hover
+{
+    color: white;
+    border: none;
+    background-color: #3471C1;
+}
+
+/* ************************************************************* */
+
 @media (max-width: 800px)
 {
-    .search-menu-container
-    {
-        float: left;
-        left: -35px;
-    }
-
     .google-text-logo h1
     {
         font-size: 1.5em;
@@ -233,6 +358,12 @@ input.search-submit:hover
     .google-text-logo h1 span
     {
         font-size: 2.8em;
+    }
+    
+    .google-text-logo.mini h1 span
+    {
+        font-size: 1.25em;
+        letter-spacing: -8px;
     }
 
     .search_bar
@@ -245,7 +376,7 @@ input.search-submit:hover
         width: 85%;
     }
 
-    .submit-button
+    .hidden
     {
         display: none;
     }
@@ -267,9 +398,20 @@ input.search-submit:hover
     {
         font-size: 2em;
     }
+    
+    .google-text-logo.mini h1 span
+    {
+        font-size: 1.35em;
+        letter-spacing: -8px;
+    }
 
     .search_bar
     {
         width: 95%;
+    }
+    
+    .search-menu-container a
+    {
+        font-size: 0.9em;
     }
 }

@@ -8,17 +8,8 @@
     </head>
     <body>
         <div class="container">
-
-            <div class="search-menu-container">
-                <nav>
-                  <ul>
-                    <a href="index.html"><li>Go back to Google Search</li></a>
-                  </ul>
-                </nav>
-            </div>
-
-            <div class="search-content-container">
-                <div class="google-text-logo">
+            <div class="search-top-bar">
+                <div class="google-text-logo mini">
                     <h1 class="blue">
                       <span class="blue">G</span>
                       <span class="red">o</span>
@@ -26,24 +17,72 @@
                       <span class="blue">g</span>
                       <span class="green">l</span>
                       <span class="red">e</span>
-                  Images</h1>
+                    </h1>
                 </div>
-
+                <div class="search-menu-container">
+                    <nav>
+                      <ul>
+                        <a href="index.html"><li>Go back to Google Search</li></a>
+                      </ul>
+                    </nav>
+                </div>
+                <div class="advanced-search-top-bar">
+                    <label class="red">Advanced Search</label>
+                </div>
+            </div>
+            <div class="advanced-search-form">
                 <form action="https://google.com/search" method="GET">
-                    <div class="search_bar">
-
-                        <input name="tbm" value="isch" type="hidden">
-                        <input type="text" name="q" class="search-input" placeholder="Search" autofocus>
-
-                        <button class="right-side-search-button" type="submit">
-                            <div>
-                                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                                </svg>
+                    <div class="advanced-search-container">
+                        <div class="fpw-container">
+                            <div class="fpw-content">
+                                <span>Find pages with...</span>
                             </div>
-                        </button>
-                    </div>
-                    <div class="submit-button">
-                      <input type="submit" value="Google Search" class="search-submit">
+                            <div class=""></div>
+                            <div class="blank-space"></div>
+                        </div>
+                        <div class="lbl-in-container">
+                            <div class="lbl-content">
+                                <label for="atw">all these words:</label>
+                            </div>
+                            <div class="in-content">
+                                <input id="atw" name="as_q" type="text" value="" autofocus class="in">
+                            </div>
+                            <div class="blank-space"></div>
+                        </div>
+                        <div class="lbl-in-container">
+                            <div class="lbl-content">
+                                <label for="tewop">this exact word or phrase:</label>
+                            </div>
+                            <div class="in-content">
+                                <input id="tewop" type="text" name="as_epq" value="" class="in">
+                            </div>
+                            <div class="blank-space"></div>
+                        </div>
+                        <div class="lbl-in-container">
+                            <div class="lbl-content">
+                                <label for="aotw">any of these words:</label>
+                            </div>
+                            <div class="in-content">
+                                <input id="aotw" type="text" name="as_oq" value="" class="in">
+                            </div>
+                            <div class="blank-space"></div>
+                        </div>
+                        <div class="lbl-in-container">
+                            <div class="lbl-content">
+                                <label for="notw">none of these words:</label>
+                            </div>
+                            <div class="in-content">
+                                <input id="notw" type="text" name="as_eq" value="" class="in">
+                            </div>
+                            <div class="blank-space"></div>
+                        </div>
+                        <div class="lbl-in-container">
+                            <div class="lbl-content"></div>
+                            <div class="in-content advanced-search-submit-button">
+                              <input type="submit" value="Advanced Search" class="search-submit advanced-search-submit">
+                            </div>
+                            <div class="blank-space"></div>
+                        </div>
                     </div>
                 </form>
             </div>

@@ -281,7 +281,6 @@ input.search-submit:hover
     padding: 10px;
     box-sizing: border-box;
     background-color: rgba(124, 196, 228,0.8);
-    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -307,7 +306,7 @@ input.search-submit:hover
 .in-content
 {
     width: 45%;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .blank-space
@@ -380,6 +379,32 @@ input.advanced-search-submit:hover
     {
         display: none;
     }
+    
+    .advanced-search-container
+    {
+        justify-content: center;
+        overflow: hidden;
+        background-color: transparent;
+    }
+    
+    .advanced-search-container .lbl-in-container, .fpw-container
+    {
+        width: auto;
+        flex-wrap: nowrap;
+        background-color: transparent;
+    }
+    
+    .in-content
+    {
+        width: 70%;
+        background-color: transparent;
+    }
+    
+    .lbl-content, .fpw-content
+    {
+        width: 30%;
+        background-color: transparent;
+    }
 }
 
 @media (max-width: 576px)
@@ -413,5 +438,17 @@ input.advanced-search-submit:hover
     .search-menu-container a
     {
         font-size: 0.9em;
+    }
+    
+    .advanced-search-container .lbl-in-container, .fpw-container
+    {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    
+    .lbl-content, .in-content, .fpw-content
+    {
+        width: 100%;
+        background-color: transparent;
     }
 }
